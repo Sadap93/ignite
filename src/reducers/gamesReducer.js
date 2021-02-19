@@ -1,7 +1,8 @@
+
 const initState = {
-    popular : [],
-    newGames : [],
-    upComing : [],
+    popular: [],
+    newGames: [],
+    upComing: [],
     searched: []
 }
 
@@ -12,6 +13,16 @@ const gameReducer = (state = initState, action) => {
         default:
             return { ...state }
     }
-}
+};
+
+
+//ACTION CREATOR
+const fetchGames = (userData) => {
+    return {
+        type: "FETCH_GAMES",
+        payload: userData
+    };
+};
+
 
 export default gameReducer;
