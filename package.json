@@ -1,6 +1,7 @@
 {
   "name": "ignite",
   "version": "0.1.0",
+  "homepage": "https://sadap93.github.io/ignite/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
@@ -9,6 +10,7 @@
     "axios": "^0.21.1",
     "framer": "^1.2.25",
     "framer-motion": "^3.6.7",
+    "gh-pages": "^3.1.0",
     "motion": "^5.0.0-beta26",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -24,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
